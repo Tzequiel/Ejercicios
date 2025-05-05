@@ -16,12 +16,12 @@ fr=int(fr)
 
 if pts>= 500:
     fprice= price-(price*descpts)
-    print=("El precio final es:"+str(fprice))
-elif pts>= 500 and est=="si":
+    print("El precio final es: $"+str(fprice))
+elif pts<= 500 and est=="si":
     fprice= price- (price*descest)
-    print=("El precio final es:"+str(fprice))
-elif pts>= 500 and est=="no" and fr >= 15:
-    fprice= price- (price*descfr)
-    print=("El precio final es:"+str(fprice))
+    print("El precio final es $:"+str(fprice))
+elif pts<= 500 and est=="no" and fr >= 15:
+    fprice= price-(price*descfr)
+    print("El precio final es: $"+str(fprice))
 else:
     print("El precio final es: $"+str(price))
